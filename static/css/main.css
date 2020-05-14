@@ -23,17 +23,25 @@ img {
 /* Homepage */
 
 .intro {
-    transform: translateY(22vh);
+    transform: translateY(3vh);
 }
 
 .intro > h1 {
-    color: #212121;
-    font-size: 12vh;
+    color: #555;
+    font-size: 3.5vh;
 }
 
 .intro > h2 {
     color: #757575;
     font-size: 3vmin;
+}
+
+.intro > h5 {
+    color: var(--letterAccent);
+}
+
+h5 {
+    color: var(--letterAccent);
 }
 
 /* Page content */
@@ -100,9 +108,14 @@ a:hover {
 /* Colored borders at top/bottom of page */
 
 .navbar.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+    font-size: 13px;
     border-top: var(--border-width) solid var(--accent);
 }
+
 
 footer {
     border-bottom: var(--border-width) solid var(--accent);
 }
+

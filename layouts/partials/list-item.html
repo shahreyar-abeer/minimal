@@ -16,7 +16,9 @@
     {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subheader" }}
     {{ with .Description }} {{ $.Scratch.Set "subheader" . }} {{ end }}
 
-    <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h4>
-    <h5>{{ $.Scratch.Get "subheader" }}</h5>
+    
+    
+    <span>{{ $.Scratch.Get "subheader" }}</span>
+    <a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a>
 
 </div>
